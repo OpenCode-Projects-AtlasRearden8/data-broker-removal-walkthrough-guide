@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Broker Removal Checklist — Asdale Dynamics</title>
+<meta name="description" content="Free, static, private checklist for finding and opting out of data brokers by hand. Nothing leaves your device.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Data Broker Removal Checklist</h1>
+    <p class="tagline">Find them &middot; remove yourself &middot; stay off. Free and manual — no scraping, no data leaves this page.</p>
+    <div class="progress-zone">
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="progress-label" id="progressLabel">0 of 0 done (0%)</p>
+    </div>
+  </div>
+</header>
+
+<noscript><p class="noscript wrap">JavaScript is off, so saving progress is disabled — the checklist below still works on paper: print it.</p></noscript>
+
+<main class="wrap">
+
+<div class="toolbar">
+  <input type="search" id="filterBox" placeholder="Filter tasks… (e.g. spokeo, calendar, email)" aria-label="Filter tasks">
+  <button type="button" id="uncheckAll" title="Clear all checkmarks">Reset checks</button>
+  <button type="button" id="printBtn">Print</button>
+</div>
+
+<p class="note">Progress saves automatically in this browser (localStorage). Everything stays on your device — this page is static HTML with no analytics, no cookies, no network calls.</p>
+
+<section class="panel" id="s-setup">
+  <h2>1&middot; Set up your removal kit <span class="time">~10 min</span></h2>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="s1"><span>Pick a name spelling + 2–3 past cities/states to search with</span></label></li>
+    <li><label><input type="checkbox" data-key="s2"><span>Create a dedicated "project" email just for removal requests</span></label></li>
+    <li><label><input type="checkbox" data-key="s3"><span>Make a tracking sheet (broker / listing URL / date / confirmation #)</span></label></li>
+    <li><label><input type="checkbox" data-key="s4"><span>I know where the request templates are (docs/04) when a site has no web form</span></label></li>
+    <li><label><input type="checkbox" data-key="s5"><span>Calendar reminders scheduled: +3, +6, +12 months (docs/06, .ics below)</span></label></li>
+  </ul>
+</section>
+
+<section class="panel" id="s-find">
+  <h2>2&middot; Find your listings <span class="time">~45 min</span></h2>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="f1"><span>Search: "[Name]" "[Current City]" — record every result URL</span></label></li>
+    <li><label><input type="checkbox" data-key="f2"><span>Search: "[Name]" "[Past City]" for your last 2–3 homes</span></label></li>
+    <li><label><input type="checkbox" data-key="f3"><span>Search your phone number and main email in quotes</span></label></li>
+    <li><label><input type="checkbox" data-key="f4"><span>Prioritize: mark the top-3 most-visible results to do first</span></label></li>
+    <li><label><input type="checkbox" data-key="f5"><span>Check Google "Results about you" tool (support.google.com/websearch/answer/12719076)</span></label></li>
+  </ul>
+</section>
+
+<section class="panel" id="s-brokers">
+  <h2>3&middot; Work the major brokers (one line each — opt out on their own site)</h2>
+  <p class="hint">Links/pages shift; if a path below moved, search <em>"site name" opt out</em> and use only the broker's own domain. Confirm each with the emailed link.</p>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="b1"><span>Whitepages — optout.whitepages.com</span></label></li>
+    <li><label><input type="checkbox" data-key="b2"><span>Spokeo — spokeo.com/optout</span></label></li>
+    <li><label><input type="checkbox" data-key="b3"><span>MyLife — footer &rarr; Privacy / deletion form</span></label></li>
+    <li><label><input type="checkbox" data-key="b4"><span>Intelius — intelius.com/optout</span></label></li>
+    <li><label><input type="checkbox" data-key="b5"><span>BeenVerified — footer &rarr; Do Not Sell My Info</span></label></li>
+    <li><label><input type="checkbox" data-key="b6"><span>TruthFinder — Do Not Sell / opt-out form</span></label></li>
+    <li><label><input type="checkbox" data-key="b7"><span>PeopleFinders — opt-out page</span></label></li>
+    <li><label><input type="checkbox" data-key="b8"><span>Instant Checkmate — privacy opt-out</span></label></li>
+    <li><label><input type="checkbox" data-key="b9"><span>Radaris — control-your-privacy form</span></label></li>
+    <li><label><input type="checkbox" data-key="b10"><span>Nuwber — opt-out page</span></label></li>
+    <li><label><input type="checkbox" data-key="b11"><span>FastPeopleSearch — removal page</span></label></li>
+    <li><label><input type="checkbox" data-key="b12"><span>Google — "Results about you" removal request</span></label></li>
+    <li><label><input type="checkbox" data-key="b13"><span>Bing — personal-data removal form</span></label></li>
+    <li><label><input type="checkbox" data-key="b14"><span>LexisNexis — full-file disclosure / opt-out process</span></label></li>
+    <li><label><input type="checkbox" data-key="b15"><span>Long tail: any other listings found — template email sent</span></label></li>
+  </ul>
+</section>
+
+<section class="panel" id="s-confirm">
+  <h2>4&middot; Confirm &amp; log <span class="time">~5 min each</span></h2>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="c1"><span>Clicked every confirmation link (request isn't done until you do)</span></label></li>
+    <li><label><input type="checkbox" data-key="c2"><span>Saved confirmation IDs; marked "confirmed" in tracker</span></label></li>
+    <li><label><input type="checkbox" data-key="c3"><span>+2 weeks: spot-checked the big ones, incognito, name + city</span></label></li>
+    <li><label><input type="checkbox" data-key="c4"><span>Stubborn ones: firm follow-up sent (template 3, docs/04)</span></label></li>
+  </ul>
+</section>
+
+<section class="panel" id="s-renew">
+  <h2>5&middot; Renewals — the maintenance loop</h2>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="r1"><span>+1 month: verify confirmations processed</span></label></li>
+    <li><label><input type="checkbox" data-key="r2"><span>+3 months: full re-search pass, re-request stragglers</span></label></li>
+    <li><label><input type="checkbox" data-key="r3"><span>+6 months: same pass</span></label></li>
+    <li><label><input type="checkbox" data-key="r4"><span>+12 months: same pass + sweep for new brokers</span></label></li>
+    <li><label><input type="checkbox" data-key="r5"><span>Yearly calendar anchor set (same month each year works great)</span></label></li>
+  </ul>
+</section>
+
+<section class="panel" id="s-forward">
+  <h2>6&middot; Stay off going forward</h2>
+  <ul class="checklist">
+    <li><label><input type="checkbox" data-key="g1"><span>Credit frozen at all three bureaus (Equifax, Experian, TransUnion)</span></label></li>
+    <li><label><input type="checkbox" data-key="g2"><span>OptOutPrescreen.com — stopped prescreened offers</span></label></li>
+    <li><label><input type="checkbox" data-key="g3"><span>donotcall.gov registered</span></label></li>
+    <li><label><input type="checkbox" data-key="g4"><span>Email aliases in use for sketchy signups</span></label></li>
+    <li><label><input type="checkbox" data-key="g5"><span>Second/burner phone number for forms &amp; deliveries, if feasible</span></label></li>
+    <li><label><input type="checkbox" data-key="g6"><span>P.O. box / work address instead of home for re-shared mail</span></label></li>
+    <li><label><input type="checkbox" data-key="g7"><span>Old usernames searched; unique handles going forward</span></label></li>
+    <li><label><input type="checkbox" data-key="g8"><span>Social profiles checked: home city off bios, relatives' names not public</span></label></li>
+    <li><label><input type="checkbox" data-key="g9"><span>Business/LLC: registered-agent service instead of home address</span></label></li>
+    <li><label><input type="checkbox" data-key="g10"><span>10-minute quarterly monitoring habit on the calendar</span></label></li>
+  </ul>
+</section>
+
+<section class="panel panel-tinted" id="s-ics">
+  <h2>Bonus: calendar reminders (.ics)</h2>
+  <p class="hint">Copy this text, save it as <code>broker-recheck.ics</code>, then open it in your calendar app (Google Calendar &rarr; Settings &rarr; Import; Apple Calendar just double-clicks it). Edit the dates to match when you start.</p>
+  <div class="ics-head"><button type="button" id="copyIcs">Copy ICS text</button><span id="copyMsg" class="copymsg" aria-live="polite"></span></div>
+  <pre id="icsText" tabindex="0">BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Asdale Dynamics//Broker Re-check Reminders//EN
+BEGIN:VEVENT
+UID:broker-recheck-3mo@local
+DTSTAMP:20260101T120000Z
+DTSTART;VALUE=DATE:20260115
+DURATION:PT1H
+RRULE:FREQ=MONTHLY;INTERVAL=3;COUNT=4
+SUMMARY:Broker re-check (search name+city, re-request stragglers)
+DESCRIPTION:Re-run the walkthrough find-and-request pass. Update tracker.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Broker re-check tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:broker-recheck-annual@local
+DTSTAMP:20260101T120000Z
+DTSTART;VALUE=DATE:20270115
+DURATION:PT90M
+RRULE:FREQ=YEARLY;COUNT=5
+SUMMARY:Broker annual sweep (new brokers + verify old removals)
+DESCRIPTION:docs/06 renewals calendar. One 60-90 min timed block.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Broker annual sweep tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR</pre>
+</section>
+
+<footer class="foot">
+  <p><strong>Education only — not legal advice.</strong> Manual, by-the-book: no scraping, no automated submissions. Verify opt-out paths on each broker's own official site; they change often. Never paste a full SSN, ID scan, or anyone else's personal data into requests.</p>
+  <p>Data Broker Removal Walkthrough Guide &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT License &middot; companion to the docs/ folder guides.</p>
+</footer>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>
